@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chat.MainActivity" 
+    >
+
+ <RelativeLayout 
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:background="#F5F5F5">
+
+     <Button
+         android:id="@+id/To_delete_layout"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:text="设置"
+         android:background="@android:color/transparent"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:text="Android"
+         android:textSize="20sp"/>
+    <Button
+         android:id="@+id/back_main"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:text="返回"
+         android:background="@android:color/transparent" />
+
+ </RelativeLayout>
+
+    
+    <ListView
+        android:background="#FAFAFA"
+        android:id="@+id/show_message"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="#0000"/>
+        <LinearLayout 
+           android:layout_width="match_parent"
+        	android:layout_height="0dp"
+        	android:layout_weight="1.4"
+        	android:focusable="true"
+        	android:focusableInTouchMode="true"
+        	android:background="#FFFFFF"
+            >
+			<!-- ems设置字体框允许最大的字符 -->
+
+            <EditText
+                android:id="@+id/input_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.99"
+                android:configChanges="orientation|keyboardHidden"
+                android:ems="10"
+                android:hint="Input Message"
+                android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Send" />
+            
+        </LinearLayout>
+</LinearLayout>

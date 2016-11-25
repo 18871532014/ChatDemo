@@ -1,0 +1,12 @@
+package com.example.chat.uitl;
+/*ÅÐ¶ÏStringÊÇ·ñÎª¿Õ*/
+public class IsEmpty {
+	public static boolean isEmpty(String string){
+		if (string==null || string.trim().isEmpty()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+}
